@@ -11,6 +11,6 @@ make browsing your local asset library in a file explorer much more pleasent. </
 - Windows only </br>
 
 <h2>Instructions:</h2>
-- Download latest Source Code (Zip) version from <a href="https://github.com/Fenris42/Delete_Meta_Files/releases">Releases</a> </br>
+- Download Source Code (Zip) from latest <a href="https://github.com/Fenris42/Delete_Meta_Files/releases">Releases</a> </br>
 - Extract and place Delete_Meta.ps1 file in root of your local asset library directory </br>
 - Right click Delete_Meta.ps1 - > Run with Powershell </br>
