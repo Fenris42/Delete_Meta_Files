@@ -47,6 +47,7 @@ function SearchFiles{
     #get all files in current directory and sub directories
     $allFiles = Get-ChildItem -Path $Path -Name -Recurse
     $metaFiles = New-Object System.Collections.ArrayList
+    $fileCount = 0
 
     #loop through files
     foreach($file in $allFiles){
@@ -92,6 +93,8 @@ function DeleteFiles{
     Write-Host "Deleting Files:"
     Write-Host ""
     
+    $fileCount = 0
+
     #loop through files
     foreach($file in $Files){
         
@@ -107,15 +110,6 @@ function DeleteFiles{
     Write-Host ""
     Write-Host "$fileCount Files Deleted"
     
-    ExitScript
-}
-
-function Abort{
-    
-    #console output
-    Write-Host ""
-    Write-Host "Aborted" -ForegroundColor Red
-
     ExitScript
 }
 
@@ -147,7 +141,7 @@ if($answer -eq "y"){
 #user did not accept, exit
 else{
     
-    Abort
+    ExitScript
 }
 
 
@@ -159,11 +153,6 @@ $answer = Question -Prompt "Delete all .meta files found?"
 if($answer -eq "y"){
     
     DeleteFiles -Files $searchResults
-}
-#user did not accept, exit
-else{
-    
-    Abort
 }
 
 ExitScript
