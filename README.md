@@ -1,6 +1,8 @@
 # Delete Meta Files
 Deletes all Unity .meta files in current and sub directories
 
+![Delete_Meta_Files](https://github.com/Fenris42/Delete_Meta_Files/assets/133166853/a2ba0abe-fabb-4ea7-8aef-de2cd71a9cd9)
+
 <h2>Use Case:</h2>
 When downloading an asset pack from the Unity Asset Store I move it out of my Unity project and into a seperate local library of assets on my PC. I do this to only import files into my games that are required and to make browsing and reuse of assets easier.
 </br> </br>
